@@ -6,11 +6,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
 *
 {
+
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
+}
+a {
+  position: relative;
+  text-decoration: none;
+}
+
+a:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 0px;
+  left: 0%;
+  background: white;
+  transition: width .3s ease;
+}
+
+a:hover:after{
+	cursor:pointer;
+  width: 100%;
+  left: 0%;
+  background: white;
 }
 
 body
@@ -382,3 +406,207 @@ opacity:1;
 .hover-underline-animation:hover{
   text-decoration:underline;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.row-card-jj{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.r1-jj{
+margin-top:200px;
+}
+
+.core-member-jj{
+	position:relative;
+	top:200px;
+	left:160px;
+	color:white;
+	font-size:30px;
+	font-style:bold underline;
+	font-family:Cabin;
+  font-weight: 800;
+}
+
+.center-jj {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+}
+
+.j-jj{
+ box-shadow: 30px 30px 8px black;
+ }
+
+.card-jj {
+	display:flex;
+  width: 300px;
+  height: 170px;
+  background: linear-gradient(#134a6e, #0186cb);
+  box-shadow: 0 18px 66px -20px rgba(1,1,1,0.8);
+  border-radius: 30px;
+  overflow: hidden;
+  position: relative;
+  margin:30px;
+}
+
+.card-jj h1 {
+  text-align: center;
+}
+
+.card-jj .additional-jj {
+  position: absolute;
+  width: 100px; 
+  height: 100%;
+  background: linear-gradient(#669314, #cddc3b);
+  transition: width 0.4s;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.card-jj:hover .additional-jj {
+  width: 100%;
+  border-radius: 0 5px 5px 0;
+}
+
+.card-jj .additional-jj .user-card-jj {
+  width: 100px;
+  height: 100%;
+  position: relative;
+  float: left;
+}
+
+.card-jj .additional-jj .user-card-jj::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10%;
+  right: -2px;
+  height: 80%;
+  border-left: 2px solid rgba(0,0,0,0.025);
+}
+
+.card-jj .additional-jj .user-card-jj .skill-jj {
+  top: 15%;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.5em;
+  font-weight: bold;
+  background: rgba(0,0,0,0.15);
+  padding: 0.110rem 0.65rem;
+  border-radius: 100px;
+  white-space: nowrap;
+}
+
+.card-jj .additional-jj .more-info-jj {
+  width: 45px;
+  float: left;
+  position: absolute;
+  left: 100px;
+  height: 100%;
+}
+
+.card-jj .additional-jj .more-info-jj h1 {
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.card-jj .green-jj .additional-jj .more-info-jj h1 {
+  color: #224C36;
+}
+
+.card-jj .additional-jj .socials-jj {
+  margin: 0 2rem;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.card-jj .additional-jj .socials-jj {
+  float: right;
+}
+
+.card-jj .general-jj {
+  width: 200px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  box-sizing: border-box;
+  padding: 1rem;
+  padding-top: 0;
+}
+
+.card-jj .general-jj .more-info-jj {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 0.9em;
+}
+
+.icons-jj {
+  margin-top:10%;
+  font-size:150%;
+  display:grid;
+  padding:10px;
+}
+
+.fa-jj {
+  padding-left: 10px;
+  opacity:1;
+
+}
+
+.fa-jj:hover{
+  transition-duration:.2s;
+  opacity:0.5;
+
+}
+
+.fa-jj{
+  position:relative;
+  top:1px;
+  padding:5px;
+}
+.pfp-jj{
+  border-style:solid;
+  border-width:0.5px;
+  border-radius:50%;
+  margin:27%;
+  margin-top:50%;
+  height:50px;
+  width:50px;
+}
+.pfp-image-jj{
+  background-size:100% 100%;
+  height:50px;
+  width:50px;
+  opacity:1;
+}
+.pfp-image-jj:hover{
+  opacity:0.5;
+  transition-duration:0.3s;
+}
+
+
+
+
+
+
+
